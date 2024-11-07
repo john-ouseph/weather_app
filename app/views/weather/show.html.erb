@@ -1,0 +1,8 @@
+<h1>Weather Forecast for <%= params[:address] %></h1>
+<% if @weather_data[:error] %>
+  <p><%= @weather_data[:error] %></p>
+<% else %>
+  <p>Current Temperature: <%= @weather_data[:temperature] %>°C</p>
+  <p>High: <%= @weather_data[:high] %>°C, Low: <%= @weather_data[:low] %>°C</p>
+  <p>Description: <%= @weather_data[:description] %></p>
+<% end %>
