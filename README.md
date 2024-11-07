@@ -1,24 +1,15 @@
-# README
+# Weather Forecast App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+This application retrieves weather data for a specified address using the OpenWeather API, caches it, and displays it to users.
 
-* Ruby version
+## Features
+- Accepts address input and retrieves weather forecast data.
+- Caches data for 30 minutes to improve performance.
+- Displays an indicator when cached data is used.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Setup
+1. Clone the repository
+2. Install dependencies: `bundle install`
+3. Set up environment variables in `.env`
+4. Run the server: `rails server`
